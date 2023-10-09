@@ -17,7 +17,7 @@ a, li , button , h3 , p{
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     background-color: #24252A;
     align-items: center;
     padding: 30px 10%;
@@ -45,10 +45,17 @@ ul{
     display: flex;
     justify-content: space-between;
 }
+
+li:nth-child(1){
+    padding: 0 20 0 0;
+}
 .logo{
     display: flex;
     cursor: pointer;
+    order: 2;
+    margin-left: auto;
 }
+
 .logoText{
     margin-left: 10px;
 
@@ -64,13 +71,14 @@ img{
 }
 
 button{
+    margin-left: 20px;
+    padding: 9px 25px;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     background-color: #0088a9;
-    padding: 9px 25px;
     transition: all .3s ease 0s;
     -webkit-transition: all .3s ease 0s;
     -moz-transition: all .3s ease 0s;
